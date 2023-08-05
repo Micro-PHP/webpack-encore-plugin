@@ -9,7 +9,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\Exception;
+namespace Micro\Plugin\WebpackEncore\Exception;
 
 class EntrypointNotFoundException extends \InvalidArgumentException
 {

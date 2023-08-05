@@ -9,9 +9,9 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\TagRenderer;
+namespace Micro\Plugin\WebpackEncore\TagRenderer;
 
-use OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookupInterface;
+use Micro\Plugin\WebpackEncore\Asset\EntrypointLookupInterface;
 
 readonly class TagRenderer implements TagRendererInterface
 {

@@ -9,9 +9,9 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\Asset;
+namespace Micro\Plugin\WebpackEncore\Asset;
 
-use OleksiiBulba\WebpackEncorePlugin\Exception\EntrypointNotFoundException;
+use Micro\Plugin\WebpackEncore\Exception\EntrypointNotFoundException;
 
 interface EntrypointLookupInterface
 {

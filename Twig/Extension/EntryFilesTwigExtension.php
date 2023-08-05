@@ -9,10 +9,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\Twig\Extension;
+namespace Micro\Plugin\WebpackEncore\Twig\Extension;
 
-use OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookupInterface;
-use OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRendererInterface;
+use Micro\Plugin\WebpackEncore\Asset\EntrypointLookupInterface;
+use Micro\Plugin\WebpackEncore\TagRenderer\TagRendererInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 

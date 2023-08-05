@@ -9,15 +9,15 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\Tests\Unit\TagRenderer;
+namespace Micro\Plugin\WebpackEncore\Tests\Unit\TagRenderer;
 
-use OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookupInterface;
-use OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRenderer;
+use Micro\Plugin\WebpackEncore\Asset\EntrypointLookupInterface;
+use Micro\Plugin\WebpackEncore\TagRenderer\TagRenderer;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRenderer
+ * @covers \Micro\Plugin\WebpackEncore\TagRenderer\TagRenderer
  */
 class TagRendererTest extends TestCase
 {
@@ -38,7 +38,7 @@ class TagRendererTest extends TestCase
     /**
      * @dataProvider renderWebpackLinkTagsDataProvider
      *
-     * @covers \OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRenderer::renderWebpackLinkTags
+     * @covers \Micro\Plugin\WebpackEncore\TagRenderer\TagRenderer::renderWebpackLinkTags
      */
     public function testRenderWebpackLinkTags(string $entryName, array $extraAttributes, array $cssFiles, string $expectedLinkTagString)
     {
@@ -74,7 +74,7 @@ class TagRendererTest extends TestCase
     /**
      * @dataProvider renderWebpackScriptTagsDataProvider
      *
-     * @covers \OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRenderer::renderWebpackScriptTags
+     * @covers \Micro\Plugin\WebpackEncore\TagRenderer\TagRenderer::renderWebpackScriptTags
      */
     public function testRenderWebpackScriptTags(string $entryName, array $extraAttributes, array $jsFiles, string $expectedScriptTagString)
     {

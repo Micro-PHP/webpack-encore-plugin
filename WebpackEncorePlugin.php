@@ -9,18 +9,18 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin;
+namespace Micro\Plugin\WebpackEncore;
 
-use Micro\Framework\Kernel\Plugin\ConfigurableInterface;
-use Micro\Framework\Kernel\Plugin\PluginConfigurationTrait;
-use Micro\Framework\Kernel\Plugin\PluginDependedInterface;
+use Micro\Framework\BootConfiguration\Plugin\ConfigurableInterface;
+use Micro\Framework\BootConfiguration\Plugin\PluginConfigurationTrait;
+use Micro\Framework\BootPluginDependent\Plugin\PluginDependedInterface;
 use Micro\Plugin\Twig\Plugin\TwigExtensionPluginInterface;
 use Micro\Plugin\Twig\TwigPlugin;
-use OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookup;
-use OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookupInterface;
-use OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRenderer;
-use OleksiiBulba\WebpackEncorePlugin\TagRenderer\TagRendererInterface;
-use OleksiiBulba\WebpackEncorePlugin\Twig\Extension\EntryFilesTwigExtension;
+use Micro\Plugin\WebpackEncore\Asset\EntrypointLookup;
+use Micro\Plugin\WebpackEncore\Asset\EntrypointLookupInterface;
+use Micro\Plugin\WebpackEncore\TagRenderer\TagRenderer;
+use Micro\Plugin\WebpackEncore\TagRenderer\TagRendererInterface;
+use Micro\Plugin\WebpackEncore\Twig\Extension\EntryFilesTwigExtension;
 use Symfony\Component\Serializer\Encoder\DecoderInterface;
 use Symfony\Component\Serializer\Encoder\JsonDecode;
 use Twig\Extension\ExtensionInterface;

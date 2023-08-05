@@ -9,18 +9,18 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\Tests\Unit\Asset;
+namespace Micro\Plugin\WebpackEncore\Tests\Unit\Asset;
 
-use OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookup;
-use OleksiiBulba\WebpackEncorePlugin\Exception\EntrypointNotFoundException;
-use OleksiiBulba\WebpackEncorePlugin\WebpackEncorePluginConfigurationInterface;
+use Micro\Plugin\WebpackEncore\Asset\EntrypointLookup;
+use Micro\Plugin\WebpackEncore\Exception\EntrypointNotFoundException;
+use Micro\Plugin\WebpackEncore\WebpackEncorePluginConfigurationInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Serializer\Encoder\JsonDecode;
 use Symfony\Component\Serializer\Exception\UnexpectedValueException;
 
 /**
- * @covers \OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookup
+ * @covers \Micro\Plugin\WebpackEncore\Asset\EntrypointLookup
  */
 class EntrypointLookupTest extends TestCase
 {
@@ -68,7 +68,7 @@ class EntrypointLookupTest extends TestCase
     /**
      * @dataProvider getCssFilesDataProvider
      *
-     * @covers \OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookup::getCssFiles
+     * @covers \Micro\Plugin\WebpackEncore\Asset\EntrypointLookup::getCssFiles
      */
     public function testGetCssFiles(
         string $entryName,
@@ -111,7 +111,7 @@ class EntrypointLookupTest extends TestCase
     /**
      * @dataProvider getJavaScriptFilesDataProvider
      *
-     * @covers \OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookup::getJavaScriptFiles
+     * @covers \Micro\Plugin\WebpackEncore\Asset\EntrypointLookup::getJavaScriptFiles
      */
     public function testGetJavaScriptFiles(
         string $entryName,
@@ -158,7 +158,7 @@ class EntrypointLookupTest extends TestCase
     /**
      * @dataProvider entryExistsDataProvider
      *
-     * @covers \OleksiiBulba\WebpackEncorePlugin\Asset\EntrypointLookup::entryExists
+     * @covers \Micro\Plugin\WebpackEncore\Asset\EntrypointLookup::entryExists
      */
     public function testEntryExists(
         string $entryName,

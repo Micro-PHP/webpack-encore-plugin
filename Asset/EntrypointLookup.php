@@ -9,10 +9,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace OleksiiBulba\WebpackEncorePlugin\Asset;
+namespace Micro\Plugin\WebpackEncore\Asset;
 
-use OleksiiBulba\WebpackEncorePlugin\Exception\EntrypointNotFoundException;
-use OleksiiBulba\WebpackEncorePlugin\WebpackEncorePluginConfigurationInterface;
+use Micro\Plugin\WebpackEncore\Exception\EntrypointNotFoundException;
+use Micro\Plugin\WebpackEncore\WebpackEncorePluginConfigurationInterface;
 use Symfony\Component\Serializer\Encoder\DecoderInterface;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Exception\UnexpectedValueException;
