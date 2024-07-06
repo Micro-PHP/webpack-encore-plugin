@@ -17,9 +17,7 @@
         "micro/plugin-twig": "^2.0",
         "symfony/serializer": "^6.2 || ^6.3"
     },
-    "require-dev": {
-        "ergebnis/composer-normalize": "^2.34"
-    },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Micro\\Plugin\\WebpackEncore\\": "/"
@@ -29,9 +27,6 @@
         ]
     },
     "config": {
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true
-        },
         "sort-packages": true
     },
     "extra": {
@@ -39,6 +34,5 @@
             "name": "symfony/webpack-encore-bundle",
             "url": "https://github.com/symfony/webpack-encore-bundle"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
